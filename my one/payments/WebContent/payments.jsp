@@ -72,7 +72,10 @@
 		 <br>
 		 <div class="row">
 			 <div class="col-12" id="colPayments">
-			
+				<%
+					Payment payObj = new Payment();
+					out.print(payObj.readPayment());
+				%>
 			 </div>
 		 </div>
 	</div>
