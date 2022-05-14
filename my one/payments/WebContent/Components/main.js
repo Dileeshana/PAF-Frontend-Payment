@@ -18,7 +18,7 @@ $(document).on("click", "#btnSave", function(event)
 	$("#alertError").hide();
 	
 	//Form validation-------------------
-	var status = validateItemForm();
+	var status = validatePaymentsForm();
 	
 	//If not valid
 	if (status != true)
@@ -137,7 +137,7 @@ function onPaymentDeleteComplete(response, status)
 }
 
 
-function validateItemForm()
+function validatePaymentsForm()
 {
 	//accountID
 	if ($("#txtAccountID").val().trim() == "")
