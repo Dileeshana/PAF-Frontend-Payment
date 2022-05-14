@@ -83,7 +83,7 @@ function onPaymentSaveComplete(response, status)
 // UPDATE==========================================
 $(document).on("click", ".btnUpdate", function(event)
 {
-	$("#hidItemIDSave").val($(this).data("paymentID"));
+	$("#hidpaymentIDSave").val($(this).data("paymentID"));
 	$("#txtAccountID").val($(this).closest("tr").find('td:eq(0)').text());
 	$("#txtAmount").val($(this).closest("tr").find('td:eq(1)').text());
 	$("#txtPayMethod").val($(this).closest("tr").find('td:eq(2)').text());
