@@ -122,7 +122,7 @@ public class Payment {
 		}   
 		catch (Exception e)   
 		{    
-			output =  "{\"status\":\"error\", \"data\": \"Error while inserting the Payment.\"}";  
+			output =  "{\"status\":\"error\", \"data\": \"Error while inserting the New Payment.\"}";  
 			System.err.println(e.getMessage());   
 		} 
 		
@@ -173,7 +173,7 @@ public class Payment {
 	} 
 	
 	//delete
-	public String deletePayment(String payID)   
+	public String deletePayment(String paymentID)   
 	{   
 		String output = ""; 
 	 
@@ -192,7 +192,7 @@ public class Payment {
 			PreparedStatement prepStat = con.prepareStatement(query); 
 	 
 			// binding values    
-			prepStat.setInt(1, Integer.parseInt(payID)); 
+			prepStat.setInt(1, Integer.parseInt(paymentID)); 
 	 
 			// execute the statement    
 			prepStat.execute();    
