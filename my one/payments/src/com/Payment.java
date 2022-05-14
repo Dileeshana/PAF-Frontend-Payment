@@ -58,7 +58,7 @@ public class Payment {
 				String payDate = rSet.getString("payDate");
 
 				// Add into the HTML table 
-				output += "<tr><td><input id='hidItemIDUpdate' name='hidItemIDUpdate' type='hidden' value='" + paymentID + "'>" + accountID + "</td>";
+				output += "<tr><td><input id='hidpaymentIDUpdate' name='hidpaymentIDUpdate' type='hidden' value='" + paymentID + "'>" + accountID + "</td>";
 				output += 	"<td>" + amount +  "</td>";
 				output += 	"<td>" + payMethod +  "</td>";
 				output += 	"<td>" + payDate +  "</td>";
@@ -131,7 +131,7 @@ public class Payment {
 	
 	//update
 	
-	public String updatePayment(String ID, String accountID, String amount, String payMethod, String payDate)    
+	public String updatePayment(String paymentID, String accountID, String amount, String payMethod, String payDate)    
 	{   
 		String output = ""; 
 	 
