@@ -35,7 +35,7 @@ $(document).on("click", "#btnSave", function(event)
 
 	$.ajax(
  	{
- 		url : "PaymentsService",
+ 		url : "PaymentAPI",
  		type : type,
  		data : $("#formPayments").serialize(),
  		dataType : "text",
@@ -96,7 +96,7 @@ $(document).on("click", ".btnRemove", function(event)
 {
 	 $.ajax(
  		{
- 			url : "PaymentsService",
+ 			url : "PaymentAPI",
  			type : "DELETE",
  			data : "paymentID=" + $(this).data("paymentID"),
  			dataType : "text",
