@@ -65,8 +65,8 @@ public class Payment {
 				output += 	"</tr>";
 
 				// buttons     
-				output += "<td><input name='btnUpdate' type='button' value='Update' class='btnUpdate btn btn-secondary' data-payid='" + paymentID + "'></td>"       
-						+ "<td><input name='btnRemove' type='button' value='Remove' class='btnRemove btn btn-danger' data-payid='" + paymentID + "'>" + "</td></tr>"; 
+				output += "<td><input name='btnUpdate' type='button' value='Update' class='btnUpdate btn btn-secondary' data-paymentID='" + paymentID + "'></td>"       
+						+ "<td><input name='btnRemove' type='button' value='Remove' class='btnRemove btn btn-danger' data-paymentID='" + paymentID + "'>" + "</td></tr>"; 
 		
 			}
 			con.close(); 
