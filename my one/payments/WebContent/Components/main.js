@@ -167,23 +167,23 @@ function validatePaymentsForm()
 }
 
 
-function getPaymentCard(accountID, amount, payMethod, payDate)
-{
+// function getPaymentCard(accountID, amount, payMethod, payDate)
+// {
 	
-	var payment = "";
-	payment += "<div class=\"student card bg-light m-2\" style=\"max-width: 10rem; float: left;\">";
-	payment += "<div class=\"card-body\">";
-	payment += "accountID: " + accountID + ",";
-	payment += "<br>";
-	payment += "Amount: " + amount + ",";
-	payment += "<br>";
-	payment += "Pay Method: " + payMethod + ",";
-	payment += "<br>";
-	payment += "Date: " + payDate;
-	payment += "</div>";
-	payment += "<input type=\"button\" value=\"Remove\" class=\"btn btn-danger remove\">";
-	payment += "</div>";
+// 	var payment = "";
+// 	payment += "<div class=\"student card bg-light m-2\" style=\"max-width: 10rem; float: left;\">";
+// 	payment += "<div class=\"card-body\">";
+// 	payment += "accountID: " + accountID + ",";
+// 	payment += "<br>";
+// 	payment += "Amount: " + amount + ",";
+// 	payment += "<br>";
+// 	payment += "Pay Method: " + payMethod + ",";
+// 	payment += "<br>";
+// 	payment += "Date: " + payDate;
+// 	payment += "</div>";
+// 	payment += "<input type=\"button\" value=\"Remove\" class=\"btn btn-danger remove\">";
+// 	payment += "</div>";
 	
-	return payment;
-}
+// 	return payment;
+// }
 
